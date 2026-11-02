@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const { getTareas, createTareas, updateTareas, deleteTareas } = require('../controllers/tareasController');
+const protect = require('../middleware/protect');
+const handler = fn => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next);
+router.use(protect);
+router.get('/', handler(getTareas));
+router.post('/', handler(createTareas));
+router.put('/:id', handler(updateTareas));
+router.delete('/:id', handler(deleteTareas));
+module.exports = router;

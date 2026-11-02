@@ -1,0 +1,9 @@
+1. Entra a github.com, crea repositorio publico backend-jwt-anahuac.
+2. En el repo selecciona Add file > Upload files, sube los archivos y carpetas de este ZIP DESCOMPRIMIDO (incluyendo .gitignore y .env.example). No subas .env.
+3. Clic Code > Codespaces > Create codespace on main.
+4. Terminal: npm install
+5. Configura una base de datos gratis de MongoDB Atlas. Crea un .env SOLO en Codespaces con PORT=5000, MONGO_URI=... y JWT_SECRET=... . No hagas commit de .env.
+6. Terminal: npm start
+7. En Ports abre puerto 5000. Si usas Postman Web, puedes necesitar su Desktop Agent o puerto Codespaces public temporal.
+8. Toma tus propias capturas de las pruebas exigidas. Incluye repo, pruebas y conclusion en PDF.
+Nota: Este paquete es codigo fuente inicial, NO son evidencias de pruebas ejecutadas.
